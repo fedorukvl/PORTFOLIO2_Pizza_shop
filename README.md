@@ -1,3 +1,11 @@
+!ВАЖНО!
+Для запуска проекта Вам необходимо:
+1.Установить зависимости;
+2.Т.к. проект использует пакет JSON-SERVER, Вам необходимо запустить его командой npm run server (Команда написана в package.json);
+3.Запустить проект командой npm start.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
