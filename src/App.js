@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux"; //хуки для реакт-редакс
+import { Route } from "react-router-dom";
+import { Header } from "./Components/index.js";
+import { Home, Cart } from "./Pages/index.js";
+import store from "./Redux/store.js";
 
-function App() {
+let App = () => {
+  let dispatch = useDispatch(); //меняем стейт в хранилище через dispatch(setPizzas())
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <div className="content">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/cart" component={Cart} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
