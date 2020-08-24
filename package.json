@@ -25,7 +25,7 @@
 		"eject": "react-scripts eject",
 		"server": "json-server --watch ./public/db.json -p 3001 -d 2000"
 	},
-	"proxy": "http://localhost:3001",
+	"proxy": "https://pizza-shop-reac.herokuapp.com/db.json",
 	"eslintConfig": {
 		"extends": "react-app"
 	},
