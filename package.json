@@ -22,10 +22,9 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"server": "json-server --watch ./public/db.json "
+		"eject": "react-scripts eject"
 	},
-	"proxy": "https://pizza-shop-reac.herokuapp.com",
+	"proxy": "https://pizza-dbb.herokuapp.com",
 	"eslintConfig": {
 		"extends": "react-app"
 	},
