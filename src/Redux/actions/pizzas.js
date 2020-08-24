@@ -1,6 +1,6 @@
 export let fetchPizzas = (sortBy, category) => (dispatch) => {
 	fetch(
-		`/db.json?${
+		`/pizzas?${
 			//убрали хост, т.к. прописали proxy в package.json
 			category !== null ? `category=${category}` : ""
 		}&_sort=${sortBy.type}&_order=${sortBy.order}`
